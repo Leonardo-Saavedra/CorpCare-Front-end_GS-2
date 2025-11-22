@@ -4,7 +4,7 @@
 Plataforma de bem‑estar corporativo (CorpCare) para promover saúde mental no trabalho, oferecendo cadastro, agendamento e recursos de apoio para colaboradores.
 
 ## 2. Status do Projeto
-🚧 Em desenvolvimento 🚧
+Em desenvolvimento - 80% pronto
 
 ## 3. Sumário
 1. [Sobre o Projeto](#4-sobre-o-projeto)  
@@ -18,22 +18,22 @@ Plataforma de bem‑estar corporativo (CorpCare) para promover saúde mental no 
 9. [Links Úteis](#12-links-úteis)
 
 ## 4. Sobre o Projeto
-CorpCare é uma aplicação front-end em React (Vite + TS) que consome uma API Java (Quarkus/Spring Boot). Objetivo: centralizar funcionalidades de bem‑estar (cadastro de usuário, login, listagem, agendamento, dashboards simples).
+CorpCare é uma aplicação front-end em React (Vite + TS) que consome uma API Java. Objetivo: centralizar funcionalidades de bem‑estar (cadastro de usuário, login, listagem, agendamento, suporte).
 
 ## 5. Tecnologias Utilizadas
 - React + Vite + TypeScript  
 - TailwindCSS  
-- API Java (Quarkus / Spring Boot) — variável de ambiente `VITE_API_URL`  
+- API Java — variável de ambiente `VITE_API_URL`  
 - Node.js / npm
 
 ## 6. Instalação
 1. Clone o repositório:
 ```bash
-git clone https://github.com/Leonardo-Saavedra/Front-end_GS-2
+git clone https://github.com/Leonardo-Saavedra/CorpCare-Front-end_GS-2
 ```
 2. Acesse a pasta do projeto:
 ```bash
-cd CorpCare
+cd CorpCare-Front-end_GS-2
 ```
 3. Instale dependências:
 ```bash
@@ -41,7 +41,7 @@ npm install
 ```
 4. Crie `.env` com a variável:
 ```
-VITE_API_URL= ***LINK DE JAVA***
+VITE_API_URL= .....................
 ```
 
 ## 7. Como Usar
@@ -50,20 +50,47 @@ VITE_API_URL= ***LINK DE JAVA***
 npm run dev
 ```
 2. Acesse localmente: http://localhost:5173  
-3. URL pública da aplicação (inserir após deploy): ***URL DEPLOY***
+3. URL pública da aplicação (Vercel): ................................
 
 ## 8. Estrutura de Pastas
 ```
-/src
-  /assets
-  /components
-  /pages
-  /services
-  /utils
-public
-vite.config.ts
-package.json
-README.md
+/CorpCare-Front-end_GS-2
+    /public
+        vite.svg
+    /src
+        /assets
+            Felipe.png
+            Joao.png
+            Leonardo.png
+            login.png
+            LOGO.png
+            react.svg
+        /components
+            Footer.tsx
+            Header.tsx
+        /pages
+            Cadastro.tsx
+            Contato.tsx
+            Faq.tsx
+            Home.tsx
+            Integrantes.tsx
+            Login.tsx
+            Sobre.tsx
+        /services
+            api.ts
+    .env
+    .gitignore
+    eslint.config.js
+    index.html
+    package.lock.json
+    package.json
+    postcss.config.cjs
+    README.md
+    tailwind.config.cjs
+    tsconfig.app.json
+    tsconfig.json
+    tsconfig.node.json
+    vite.config.ts          
 ```
 
 ## 9. Endpoints ou Rotas Principais
@@ -74,18 +101,18 @@ README.md
 
 
 ## 10. Autores e Créditos
-| Nome                                    | RM      | Turma   | LinkedIn                                      | GitHub                                      |
-|-----------------------------------------|---------|---------|-----------------------------------------------|---------------------------------------------|
-| Felipe Ribeiro Salles de Camargo        | 565224  | 1TDSPY  | https://linkedin.com/in/felipe                 | https://github.com/felipe                    |
-| João Victor Santana dos Santos          | 566063  | 1TDSPY  | https://linkedin.com/in/joao                   | https://github.com/joao                      |
-| Leonardo Saavedra de Souza Campos       | 562229  | 1TDSA   | https://linkedin.com/in/leonardo               | https://github.com/Leonardo-Saavedra         |
+| Nome                                    | RM      | Turma   | LinkedIn                                                                          | GitHub                                      |
+|-----------------------------------------|---------|---------|-----------------------------------------------------------------------------------|---------------------------------------------|
+| Felipe Ribeiro Salles de Camargo        | 565224  | 1TDSPY  | https://www.linkedin.com/in/felipe-ribeiro-2ba819303/                             | https://github.com/FelipeRibeiroSalles      |
+| João Victor Santana dos Santos          | 566063  | 1TDSPY  | https://www.linkedin.com/in/jo%C3%A3o-victor-santana-2539a6365/                   | https://github.com/Jsantanadsx              |
+| Leonardo Saavedra de Souza Campos       | 562229  | 1TDSA   | https://www.linkedin.com/in/leonardo-saavedra-de-souza-campos-a67179356           | https://github.com/Leonardo-Saavedra        |
 
 
 ## 11. Contato
-- Felipe Ribeiro Salles de Camargo — RM 565224 — Turma 1TDSPY — TEAMS
-- João Victor Santana dos Santos — RM 566063 — Turma 1TDSPY — TEAMS
-- Leonardo Saavedra de Souza Campos — RM 562229 — Turma 1TDSA — TEAMS
+- Felipe Ribeiro Salles de Camargo: email academico: rm565224@fiap.com.br — e-mail pessoal: feliperscamargo@gmail.com
+- João Victor Santana dos Santos: email academico: rm566063@fiap.com.br — e-mail pessoal: joao.santanadossantos07@gmail.com
+- Leonardo Saavedra de Souza Campos: email academico: rm562229@fiap.com.br — e-mail pessoal: leonardosscampos@gmail.com
 
 ## 12. Links Úteis (para avaliação)
-- Repositório GitHub: https://github.com/SEU_USUARIO/SEU_REPO  
-- Vídeo no YouTube: https://youtu.be/SEU_VIDEO_AQUI
+- Repositório GitHub: https://github.com/Leonardo-Saavedra/CorpCare-Front-end_GS-2
+- Vídeo no YouTube: .......................

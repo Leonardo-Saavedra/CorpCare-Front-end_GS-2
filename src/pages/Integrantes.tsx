@@ -24,7 +24,7 @@ const MEMBERS: Member[] = [
     turma: "1TDSPY",
     photo: "src/assets/Joao.png",
     linkedin: "https://www.linkedin.com/in/jo%C3%A3o-victor-santana-2539a6365/",
-    github: "https://github.com/JoaoVictorSantanadosSantos",
+    github: "https://github.com/Jsantanadsx",
   },
   {
     name: "Leonardo Saavedra de Souza Campos",
