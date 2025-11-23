@@ -37,7 +37,7 @@ export default function Login() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 px-4 dark:bg-gray-800">
+    <section className="min-h-screen px-6 py-20 flex items-start justify-center bg-gray-200 dark:bg-gray-800 transition-colors duration-300">
       <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 dark:bg-gray-900">
         <h1 className="text-2xl font-bold text-blue-700 text-center mb-6">
           Login
@@ -52,7 +52,7 @@ export default function Login() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
+              className="mt-1 w-full border border-gray-700 focus:border-gray-900 rounded-lg px-3 py-2 text-gray-700 dark:bg-gray-800"
               required
             />
           </div>
@@ -65,7 +65,7 @@ export default function Login() {
               type="password"
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
+              className="mt-1 w-full border border-gray-700 focus:border-gray-900 rounded-lg px-3 py-2 text-gray-700 dark:bg-gray-800"
               required
             />
           </div>

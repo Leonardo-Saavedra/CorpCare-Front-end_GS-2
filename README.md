@@ -4,7 +4,11 @@
 Plataforma de bem‑estar corporativo (CorpCare) para promover saúde mental no trabalho, oferecendo cadastro, agendamento e recursos de apoio para colaboradores.
 
 ## 2. Status do Projeto
-Em desenvolvimento - 80% pronto
+Em desenvolvimento - 95% pronto: 
+FALTANDO: 
+deploy no vercel;
+.env com a variavel VITE_API_URL com o link gerado no vercel;
+vídeo 3 minutos no youtube;
 
 ## 3. Sumário
 1. [Sobre o Projeto](#4-sobre-o-projeto)  

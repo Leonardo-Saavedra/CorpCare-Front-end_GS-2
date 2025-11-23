@@ -7,8 +7,8 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300 border-b border-gray-300 dark:border-gray-600">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-2 gap-2 md:gap-4">
+<header className="bg-gray-200 dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300 border-b border-gray-300 dark:border-gray-600">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-4 gap-2 md:gap-4">
         <div className="flex items-center gap-2 md:gap-6">
           <Link to="/" className="flex items-center logo-link">
             <img
@@ -73,7 +73,7 @@ export default function Header() {
           <button
             onClick={toggleTheme}
             aria-label="Alternar Tema"
-            className="px-3 py-1 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 font-semibold transition-colors duration-300 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none flex items-center justify-center text-sm md:text-base"
+            className="px-3 py-1 rounded-md bg-gray-700 text-white dark:bg-white text-gray-800 dark:text-gray-800 font-semibold transition-colors duration-300 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none flex items-center justify-center text-sm md:text-base"
             title="Alternar tema claro/escuro"
           >
             Tema

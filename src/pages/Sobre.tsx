@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sobre() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-start px-6 py-16 bg-gray-50 dark:bg-gray-800 dark:text-white transition-colors duration-300">
+    <section className="min-h-screen flex flex-col items-center justify-start px-6 py-20 bg-gray-200 dark:bg-gray-800 dark:text-white transition-colors duration-300">
       <div className="max-w-4xl text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-700">
           Sobre o CorpCare

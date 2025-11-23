@@ -38,7 +38,7 @@ const MEMBERS: Member[] = [
 
 export default function Integrantes() {
   return (
-    <section className="min-h-screen bg-gray-50 dark:bg-gray-800 dark:text-white px-6 py-12 transition-colors duration-300">
+    <section className="min-h-screen bg-gray-200 dark:bg-gray-800 dark:text-white px-6 py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-700">Integrantes</h1>
         <p className="text-gray-600 dark:text-white mb-6">
