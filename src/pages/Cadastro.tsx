@@ -37,55 +37,51 @@ export default function Cadastro() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8">
+    <section className="min-h-screen flex items-center justify-center bg-gray-100 px-4 dark:bg-gray-800">
+      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 dark:bg-gray-900">
         <h1 className="text-2xl font-bold text-blue-700 text-center mb-6">Criar Conta</h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Nome</label>
+            <label className="block text-sm font-medium text-gray-900 dark:text-gray-100">Nome</label>
             <input
               type="text"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Digite seu nome completo"
+              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
               required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">E-mail</label>
+            <label className="block text-sm font-medium text-gray-900 dark:text-gray-100">E-mail</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Digite seu e-mail"
+              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
               required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Senha</label>
+            <label className="block text-sm font-medium text-gray-900 dark:text-gray-100">Senha</label>
             <input
               type="password"
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Crie uma senha"
+              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
               required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Confirmar Senha</label>
+            <label className="block text-sm font-medium text-gray-900 dark:text-gray-100">Confirmar Senha</label>
             <input
               type="password"
               value={confirmarSenha}
               onChange={(e) => setConfirmarSenha(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Confirme sua senha"
+              className="mt-1 w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
               required
             />
           </div>

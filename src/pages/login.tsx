@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { post } from "../services/api" // ✅ usa a função de integração com a API
+import { post } from "../services/api"
 
 export default function Login() {
   const [email, setEmail] = useState("")
@@ -15,8 +15,7 @@ export default function Login() {
     setMensagem("")
 
     try {
-      // ✅ Chamada à API Java — ajuste o endpoint conforme seu backend
-      // Exemplo: /api/login ou /api/pacientes/login
+
       const response = await post<{ token?: string; nome?: string }>(
         "/api/login",
         { email, senha }
@@ -24,10 +23,8 @@ export default function Login() {
 
       console.log("Resposta do login:", response)
 
-      // Se o backend retornar token ou nome, login é considerado válido
       if (response && (response.token || response.nome)) {
         setMensagem("Login realizado com sucesso!")
-        // opcional: salvar token no localStorage
         localStorage.setItem("usuario", JSON.stringify(response))
         setTimeout(() => navigate("/"), 1500)
       } else {
@@ -40,37 +37,35 @@ export default function Login() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8">
+    <section className="min-h-screen flex items-center justify-center bg-gray-100 px-4 dark:bg-gray-800">
+      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 dark:bg-gray-900">
         <h1 className="text-2xl font-bold text-blue-700 text-center mb-6">
           Login
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-gray-900 dark:text-gray-100">
               E-mail
             </label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Digite seu e-mail"
+              className="mt-1 w-full border rounded-lg px-3 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
               required
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-gray-900 dark:text-gray-100">
               Senha
             </label>
             <input
               type="password"
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
-              className="mt-1 w-full border rounded-lg px-3 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Digite sua senha"
+              className="mt-1 w-full border rounded-lg px-3 py-2 text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-700"
               required
             />
           </div>
@@ -87,7 +82,6 @@ export default function Login() {
             Entrar
           </button>
 
-          {/* Link para cadastro */}
           <div className="text-sm text-center mt-4">
             <button
               type="button"

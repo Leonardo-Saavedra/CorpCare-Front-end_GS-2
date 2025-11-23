@@ -68,6 +68,8 @@ npm run dev
         /components
             Footer.tsx
             Header.tsx
+        /context
+            TemaEscuro.tsx    
         /pages
             Cadastro.tsx
             Contato.tsx

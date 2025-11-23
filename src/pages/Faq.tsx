@@ -10,14 +10,14 @@ export default function Faq() {
   ];
 
   return (
-    <section className="min-h-screen px-6 py-16 bg-gray-50">
+    <section className="min-h-screen px-6 py-16 bg-gray-50 dark:bg-gray-800 dark:text-white transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-700 mb-10 text-center">Perguntas Frequentes (FAQ)</h1>
         <div className="space-y-6">
           {faqs.map((f, i) => (
-            <div key={i} className="bg-white p-6 rounded-lg shadow-sm">
+            <div key={i} className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
               <h3 className="font-semibold text-lg text-blue-600 mb-2">{f.q}</h3>
-              <p className="text-gray-700">{f.a}</p>
+              <p className="text-gray-700 dark:text-gray-300">{f.a}</p>
             </div>
           ))}
         </div>

@@ -38,10 +38,10 @@ const MEMBERS: Member[] = [
 
 export default function Integrantes() {
   return (
-    <section className="min-h-screen bg-gray-50 px-6 py-12">
-      <div className="max-w-7xl mx-auto"> {/* aumentado para dar mais largura aos cards */}
-        <h1 className="text-3xl font-bold text-blue-700 mb-6">Integrantes</h1>
-        <p className="text-gray-600 mb-6">
+    <section className="min-h-screen bg-gray-50 dark:bg-gray-800 dark:text-white px-6 py-12 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl font-bold text-blue-700 dark:text-blue-700">Integrantes</h1>
+        <p className="text-gray-600 dark:text-white mb-6">
           Identificação completa dos integrantes: nome, RM, turma e links de perfil.
         </p>
 
@@ -49,7 +49,7 @@ export default function Integrantes() {
           {MEMBERS.map((m) => (
             <div
               key={m.rm}
-              className="border rounded-lg p-6 shadow-sm bg-white hover:shadow-md transition flex flex-col items-center text-center min-h-[300px]" /* maior altura mínima */
+              className="border rounded-lg p-6 shadow-sm bg-white dark:bg-gray-900 hover:shadow-md transition flex flex-col items-center text-center min-h-[300px]"
             >
               <img
                 src={m.photo}
@@ -64,7 +64,6 @@ export default function Integrantes() {
                 Turma: <span className="font-medium">{m.turma}</span>
               </p>
 
-              {/* mt-auto empurra os botões para o rodapé do card, alinhando todas as caixas */}
               <div className="mt-auto w-full flex flex-col gap-2 sm:flex-row sm:justify-center">
                 <a
                   href={m.github}

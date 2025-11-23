@@ -2,11 +2,6 @@ const apiUrl = import.meta.env.VITE_API_URL
 
 console.log("🌐 API Base URL:", apiUrl)
 
-/**
- * Função GET genérica
- * Exemplo de uso:
- * const colaboradores = await get<Colaborador[]>("/api/colaboradores")
- */
 export async function get<T>(endpoint: string): Promise<T> {
   try {
     const res = await fetch(`${apiUrl}${endpoint}`)
@@ -20,11 +15,6 @@ export async function get<T>(endpoint: string): Promise<T> {
   }
 }
 
-/**
- * Função POST genérica
- * Exemplo de uso:
- * await post("/api/colaboradores", { nome: "João", email: "joao@email.com" })
- */
 export async function post<T>(endpoint: string, data: any): Promise<T> {
   try {
     const res = await fetch(`${apiUrl}${endpoint}`, {
