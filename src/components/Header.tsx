@@ -2,17 +2,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/TemaEscuro";
 
+import Logo from "../assets/Logo.png";
+import LogoTemaEscuro from "../assets/LogoTemaEscuro.png";
+import LoginImg from "../assets/login.png";
+
 export default function Header() {
   const [menuAtivo, setMenuAtivo] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   return (
-<header className="bg-gray-200 dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300 border-b border-gray-300 dark:border-gray-600">
+    <header className="bg-gray-200 dark:bg-gray-900 shadow-md fixed w-full z-50 transition-colors duration-300 border-b border-gray-300 dark:border-gray-600">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-4 gap-2 md:gap-4">
         <div className="flex items-center gap-2 md:gap-6">
           <Link to="/" className="flex items-center logo-link">
             <img
-              src={theme === "dark" ? "/src/assets/LogoTemaEscuro.png" : "/src/assets/Logo.png"}
+              src={theme === "dark" ? LogoTemaEscuro : Logo}
               alt="CorpCare"
               className="h-16 md:h-28 w-auto object-contain"
             />
@@ -79,7 +83,7 @@ export default function Header() {
             Tema
           </button>
           <Link to="/login" className="flex items-center h-8 w-8 md:h-10 md:w-10">
-            <img src="/src/assets/login.png" alt="Login" className="h-full w-full object-contain" />
+            <img src={LoginImg} alt="Login" className="h-full w-full object-contain" />
           </Link>
         </div>
       </div>

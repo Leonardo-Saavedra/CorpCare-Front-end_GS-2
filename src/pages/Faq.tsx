@@ -1,8 +1,6 @@
-import React from "react";
-
 export default function Faq() {
   const faqs = [
-    { q: "O que é o CorpCare?", a: "Uma plataforma de apoio emocional e análise de clima para ambientes de trabalho." },
+    { q: "O que é o CorpCare", a: "Uma plataforma de apoio emocional e análise de clima para ambientes de trabalho." },
     { q: "Como meus dados são usados?", a: "As respostas são agregadas e anonimizadas; a privacidade é prioridade." },
     { q: "Como minha empresa integra o sistema?", a: "A integração é via API REST pública (forneça a URL da API no ambiente de produção)." },
     { q: "Preciso instalar algo nos computadores?", a: "Não — o CorpCare é acessado via navegador; integrações são feitas no backend." },

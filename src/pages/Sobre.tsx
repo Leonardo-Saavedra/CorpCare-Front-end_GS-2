@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Sobre() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-start px-6 py-20 bg-gray-200 dark:bg-gray-800 dark:text-white transition-colors duration-300">

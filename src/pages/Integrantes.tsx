@@ -1,4 +1,6 @@
-import React from "react";
+import FelipeImg from "../assets/Felipe.png";
+import JoaoImg from "../assets/Joao.png";
+import LeonardoImg from "../assets/Leonardo.png";
 
 type Member = {
   name: string;
@@ -14,7 +16,7 @@ const MEMBERS: Member[] = [
     name: "Felipe Ribeiro Salles de Camargo",
     rm: "565224",
     turma: "1TDSPY",
-    photo: "src/assets/Felipe.png",
+    photo: FelipeImg,
     linkedin: "https://www.linkedin.com/in/felipe-ribeiro-2ba819303/",
     github: "https://github.com/FelipeRibeiroSalles",
   },
@@ -22,7 +24,7 @@ const MEMBERS: Member[] = [
     name: "João Victor Santana dos Santos",
     rm: "566063",
     turma: "1TDSPY",
-    photo: "src/assets/Joao.png",
+    photo: JoaoImg,
     linkedin: "https://www.linkedin.com/in/jo%C3%A3o-victor-santana-2539a6365/",
     github: "https://github.com/Jsantanadsx",
   },
@@ -30,7 +32,7 @@ const MEMBERS: Member[] = [
     name: "Leonardo Saavedra de Souza Campos",
     rm: "562229",
     turma: "1TDSA",
-    photo: "src/assets/Leonardo.png",
+    photo: LeonardoImg,
     linkedin: "https://www.linkedin.com/in/leonardo-saavedra-de-souza-campos-a67179356",
     github: "https://github.com/Leonardo-Saavedra",
   },
