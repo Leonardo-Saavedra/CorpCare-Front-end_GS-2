@@ -45,7 +45,7 @@ npm install
 ```
 4. `.env` com a variável:
 ```
-VITE_API_URL= .....................
+VITE_API_URL= https://java-gs-gomk.onrender.com
 ```
 
 ## 7. Como Usar
@@ -134,4 +134,3 @@ Footer e página de login/cadastro:
 ## 13. Links Úteis (para avaliação)
 - Repositório GitHub: https://github.com/Leonardo-Saavedra/CorpCare-Front-end_GS-2
 - URL Pública da aplicação no Vercel: https://corp-care-front-end-gs-2-b77g4zcfw-leonardo-saavedras-projects.vercel.app
-- Vídeo no YouTube: .......................
