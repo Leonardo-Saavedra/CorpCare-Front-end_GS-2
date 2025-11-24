@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-200 py-0 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-      <section className="bg-blue-700 text-white text-center pt-14 md:pt-16 pb-16 relative md:static md:mt-0 -mt-14 z-10">
+      <section className="bg-blue-900 text-white text-center pt-14 md:pt-16 pb-16 relative md:static md:mt-0 -mt-14 z-10">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
           CorpCare — bem‑estar e saúde mental no trabalho
         </h1>

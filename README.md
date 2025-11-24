@@ -6,9 +6,8 @@ Plataforma de bem‑estar corporativo (CorpCare) para promover saúde mental no 
 ## 2. Status do Projeto
 Em desenvolvimento - 95% pronto: 
 FALTANDO: 
-deploy no vercel;
-.env com a variavel VITE_API_URL com o link gerado no vercel;
 vídeo 3 minutos no youtube;
+link da api de java;
 
 ## 3. Sumário
 1. [Sobre o Projeto](#4-sobre-o-projeto)  
@@ -18,8 +17,9 @@ vídeo 3 minutos no youtube;
 5. [Estrutura de Pastas](#8-estrutura-de-pastas)  
 6. [Endpoints ou Rotas Principais](#9-endpoints-ou-rotas-principais)  
 7. [Autores e Créditos](#10-autores-e-créditos)  
-8. [Contato](#11-contato)  
-9. [Links Úteis](#12-links-úteis)
+8. [Screenshots / Demonstração](#11-screenshots--demonstração)
+9. [Contato](#12-contato)  
+10. [Links Úteis](#13-links-úteis)
 
 ## 4. Sobre o Projeto
 CorpCare é uma aplicação front-end em React (Vite + TS) que consome uma API Java. Objetivo: centralizar funcionalidades de bem‑estar (cadastro de usuário, login, listagem, agendamento, suporte).
@@ -43,7 +43,7 @@ cd CorpCare-Front-end_GS-2
 ```bash
 npm install
 ```
-4. Crie `.env` com a variável:
+4. `.env` com a variável:
 ```
 VITE_API_URL= .....................
 ```
@@ -54,7 +54,7 @@ VITE_API_URL= .....................
 npm run dev
 ```
 2. Acesse localmente: http://localhost:5173  
-3. URL pública da aplicação (Vercel): ................................
+3. URL pública da aplicação (Vercel): https://corp-care-front-end-gs-2-b77g4zcfw-leonardo-saavedras-projects.vercel.app
 
 ## 8. Estrutura de Pastas
 ```
@@ -113,12 +113,25 @@ npm run dev
 | João Victor Santana dos Santos          | 566063  | 1TDSPY  | https://www.linkedin.com/in/jo%C3%A3o-victor-santana-2539a6365/                   | https://github.com/Jsantanadsx              |
 | Leonardo Saavedra de Souza Campos       | 562229  | 1TDSA   | https://www.linkedin.com/in/leonardo-saavedra-de-souza-campos-a67179356           | https://github.com/Leonardo-Saavedra        |
 
+## 11. Screenshots / Demonstração
+Página inicial do site, no tema claro e escuro (podendo ser alterado no botão "tema") e com todos os links para outras páginas no header funcionando perfeitamente:
+![alt text](image-1.png)
+![alt text](image-3.png)
 
-## 11. Contato
+
+Footer e página de login/cadastro:
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+
+(todas as páginas adaptadas para o modo escuro e claro)
+
+## 12. Contato
 - Felipe Ribeiro Salles de Camargo: email academico: rm565224@fiap.com.br — e-mail pessoal: feliperscamargo@gmail.com
 - João Victor Santana dos Santos: email academico: rm566063@fiap.com.br — e-mail pessoal: joao.santanadossantos07@gmail.com
 - Leonardo Saavedra de Souza Campos: email academico: rm562229@fiap.com.br — e-mail pessoal: leonardosscampos@gmail.com
 
-## 12. Links Úteis (para avaliação)
+## 13. Links Úteis (para avaliação)
 - Repositório GitHub: https://github.com/Leonardo-Saavedra/CorpCare-Front-end_GS-2
+- URL Pública da aplicação no Vercel: https://corp-care-front-end-gs-2-b77g4zcfw-leonardo-saavedras-projects.vercel.app
 - Vídeo no YouTube: .......................
